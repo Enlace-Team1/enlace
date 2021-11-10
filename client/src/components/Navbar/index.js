@@ -10,7 +10,7 @@ const Navbar = () => {
             <Nav>
                 <NavLink to="/">
                     <h1>Logo</h1>
-                    {/* <img src="" alt=""></img> */}
+                    {/* <img src="" alt=""> /> */}
                 </NavLink>
                 <Bars />
                 <NavMenu>
