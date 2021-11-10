@@ -1,6 +1,6 @@
 import React from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Profile from './pages/Profile';
@@ -34,6 +34,12 @@ function App() {
             {/* Import Navbar test - Jess */}
             <Router>
             <Navbar />
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/profiles' component={Profile} />
+              <Route path='/aboutus' component={AboutUs} />
+
+            </Switch>
             </Router>
 
           </div>
