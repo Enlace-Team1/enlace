@@ -7,7 +7,18 @@ import SignUp from '../components/SignUp';
 
 
 const Home = () => {
-  
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '90vh'
+    }}
+    >
+      
+    <h1>Home</h1>
+  </div>
+
   return (
     <main>
       <div className="flex-row justify-center">
