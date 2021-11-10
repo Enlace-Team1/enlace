@@ -6,6 +6,18 @@ import PenInvs from '../components/PenInvs'
 import PersonalInfo from '../components/PersonalInfo'
 
 const Profile = () => {
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '90vh'
+      }}
+      >
+        
+      <h1>Profile</h1>
+    </div>
+
   return (
     <div>
     <PersonalInfo/>
