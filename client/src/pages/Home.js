@@ -4,8 +4,6 @@ import { useQuery } from '@apollo/client';
 import LogIn from '../components/LogIn';
 import SignUp from '../components/SignUp';
 
-
-
 const Home = () => {
   <div
     style={{
@@ -15,7 +13,7 @@ const Home = () => {
       height: '90vh'
     }}
     >
-      
+
     <h1>Home</h1>
   </div>
 
