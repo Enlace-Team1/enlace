@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, {useState} from 'react';
 
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
 
@@ -14,9 +14,6 @@ const Navbar = () => {
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/home" activeStyle>
-                        Home
-                    </NavLink>
                     <NavLink to="/profile" activeStyle>
                         Profile
                     </NavLink>
@@ -25,10 +22,10 @@ const Navbar = () => {
                     </NavLink>
                 </NavMenu>
             <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>
             </NavBtn>
             <NavBtn>
-            <NavBtnLink to="/login">Log In</NavBtnLink>
+            <NavBtnLink to="/log-in">Log In</NavBtnLink>
             </NavBtn>
             </Nav>
         </>
