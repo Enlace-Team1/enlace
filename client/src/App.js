@@ -23,28 +23,19 @@ function App() {
       {/* Wrap page elements in Router component to keep track of location state */}
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
+          
+          <Navbar />
           <Header />
-          <div className="container">
+          <Switch>
             {/* Define routes to render different page components at different paths */}
             <Route exact path="/" component={Home} />
             {/* Define a route that will take in variable data */}
             <Route exact path="/profiles/" component={Profile} />
             <Route exact path="/aboutus/" component={AboutUs}/>
-
-            {/* Import Navbar test - Jess */}
-            <Router>
-            <Navbar />
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/profiles' component={Profile} />
-              <Route path='/aboutus' component={AboutUs} />
-
-            </Switch>
-            </Router>
+          </Switch>
 
           </div>
           <Footer />
-        </div>
       </Router>
     </ApolloProvider>
   );
