@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-Navbar {
+* {
     font-family: 'Satisfy', sans-serif;
     box-sizing: border-box;
     margin: 0;
