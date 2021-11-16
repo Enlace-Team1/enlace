@@ -4,12 +4,18 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    user: async (parent, { email }) => {
-      return User.findOne({ email }).populate('events')
+    user: async (parent, { _id }) => {
+      return User.findOne({ _id }).populate('event');
     },
 
-    event: async (parent, { title }) => {
-      return Event.findOne( { title: title } )
+    event: async (parent, { _id }) => {
+      return Event.findOne({ _id }).populate('event');
+    },
+
+    events: async (parent, args, context) => {
+      if (context.user){
+      return await Event.find({users:[ context.user_id ]});
+      }
     },
 
     me: async (parent, args, context) => {
@@ -40,11 +46,11 @@ const resolvers = {
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('Dad');
       }
 
       const token = signToken(user);
-      console.log(token);
+      
       return { token, user };
     },
 

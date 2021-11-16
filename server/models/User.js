@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+const Event = require('./Event');
 
 const userSchema = new Schema({
     userName: {
@@ -24,18 +25,8 @@ const userSchema = new Schema({
         type: Date,
         default: Date.now,
     },
-    plannedEvents: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Event',
-        }
-    ],
-    pendingInvites: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Event',
-        }
-    ]
+    plannedEvents: [Event.schema],
+    pendingInvites: [Event.schema],
 });
 
 userSchema.pre("save", async function (next) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import FullCalendar from '@fullcalendar/react' // must go before plugins
+import FullCalendar from '@fullcalendar/react' 
 import dayGridPlugin from '@fullcalendar/daygrid'
 import { useQuery } from '@apollo/client'
 import { QUERY_EVENT } from '../../utils/queries'
