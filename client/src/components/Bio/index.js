@@ -1,5 +1,5 @@
 import React  from "react";
-import { Img } from "../InfoSection/InfoElements";
+
 import {
 BioContainer,
 BioWrapper,
