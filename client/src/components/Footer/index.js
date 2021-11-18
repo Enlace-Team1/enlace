@@ -24,8 +24,9 @@ const Footer = () => {
             <FooterLinksContainer>
               <FooterLinksWrapper>
                 <FooterLinkItems> 
-                  <FooterLinkTitle>About Us</FooterLinkTitle>
-                  <FooterLink to='/sign-up'>How It Works</FooterLink>
+                  <FooterLinkTitle>About</FooterLinkTitle>
+                  <FooterLink to='/sign-up'>Register</FooterLink>
+                  <FooterLink to='/aboutus'>Meet The Team</FooterLink>
                 </FooterLinkItems>
                 <FooterLinkItems>
                   <FooterLinkTitle>Contact Us</FooterLinkTitle>
@@ -74,7 +75,7 @@ const Footer = () => {
               <SocialLogo to='/' onClick={toggleHome}>
                 Enlace
               </SocialLogo>
-              <WebsiteRights>ENLACE  &copy; {new Date().getFullYear()} - Michael Heer, Karla Goo, Micah Waweru, and Jessica White
+              <WebsiteRights>ENLACE &copy; {new Date().getFullYear()} - Michael Heer, Karla Goo, Micah Waweru, and Jessica White
                 </WebsiteRights>
               </SocialMediaWrap>
             </SocialMedia>
