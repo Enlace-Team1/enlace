@@ -1,14 +1,20 @@
-import {useState} from 'react'
-import FullCalendar from '@fullcalendar/react' // must go before plugins
-import dayGridPlugin from '@fullcalendar/daygrid'
-import EventModal from '../EventModal'
+import React, {useState} from 'react';
+import FullCalendar from '@fullcalendar/react'; // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid';
+import EventModal from '../EventModal';
+// import styled from '@emotion/styled';
 
-import { useQuery } from '@apollo/client'
-import { QUERY_EVENTS } from '../../utils/queries'
-import { QUERY_EVENT } from '../../utils/queries'
-const dayjs = require('dayjs')
+import { useQuery } from '@apollo/client';
+import { QUERY_EVENTS } from '../../utils/queries';
+import { Button } from 'react-scroll';
+// import { QUERY_EVENT } from '../../utils/queries';
+// const dayjs = require('dayjs')
 
 //console.log(document.querySelector('.fc-event-title'))
+
+// const FullCalendar = styled.FullCalendar`
+// color: '#02353C'
+// `;
 
 const Calendar = () => {
   const [show, setShow] = useState(false);
@@ -61,4 +67,4 @@ const Calendar = () => {
     )
 }
 
-export default Calendar
+export default Calendar;
