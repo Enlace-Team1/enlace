@@ -29,11 +29,7 @@ const Footer = () => {
                 </FooterLinkItems>
                 <FooterLinkItems>
                   <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                  
-                </FooterLinkItems>
-              </FooterLinksWrapper>
-            </FooterLinksContainer>
-            <SocialMedia>
+                  <SocialMedia>
               <SocialMediaWrap>
               <SocialIcons>
                 <SocialIconLink
@@ -68,8 +64,13 @@ const Footer = () => {
                 target='_blank'aria-label='Github' href='https://github.com/Enlace-Team1/enlace'>Enlace GitHub Repository<Icon />
               </SocialIconLink>
               </SocialIcons>
-
-            <br></br>
+              </SocialMediaWrap>
+            </SocialMedia>
+                </FooterLinkItems>
+              </FooterLinksWrapper>
+            </FooterLinksContainer>
+            <SocialMedia>
+              <SocialMediaWrap>
               <SocialLogo to='/' onClick={toggleHome}>
                 Enlace
               </SocialLogo>
