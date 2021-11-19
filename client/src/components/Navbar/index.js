@@ -3,7 +3,8 @@ import React, {useState, useEffect} from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { MobileIcon, Nav, NavbarContainer, NavItem, NavLinks, NavLogo, NavMenu } from './NavbarElements';
+import logo from '../images/enlace.png';
+import { MobileIcon, Nav, ImgWrap, Img, NavbarContainer, NavItem, NavLinks, NavLogo, NavMenu } from './NavbarElements';
 
 
 const Navbar = ({ toggle }) => {
@@ -27,31 +28,15 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
-            {/* <Nav>
-                <NavLink to="/">
-                    <h1>Logo</h1>
-            //         {/* <img src="" alt=""></img> */}
-            {/* //     </NavLink> */}
-            {/* //     <Bars />
-            //     <NavMenu>
-            //         <NavLink to="/profile" activeStyle>
-            //             Profile
-            //         </NavLink>
-            //         <NavLink to="/about-us" activeStyle>
-            //             About Us
-            //         </NavLink>
-            //     </NavMenu>
-            //     <NavBtn>
-            //         <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            //     </NavBtn>
-            // </Nav> */}
-
             <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              ENLACE
-              {/* <img src="" alt=""></img> */}
+              {/* ENLACE */}
+              {/* <img src="enlace.png" alt=""></img> */}
+              <ImgWrap>
+                  <Img src={logo} alt={'Enlace'} />
+                </ImgWrap>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
