@@ -75,7 +75,6 @@ const Footer = () => {
             <SocialMedia>
               <SocialMediaWrap>
               <SocialLogo to='/' onClick={toggleHome}>
-                {/* Enlace */}
                 <ImgWrap>
                   <Img src={logo} alt={'Enlace'} />
                 </ImgWrap>

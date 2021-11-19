@@ -32,8 +32,6 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              {/* ENLACE */}
-              {/* <img src="enlace.png" alt=""></img> */}
               <ImgWrap>
                   <Img src={logo} alt={'Enlace'} />
                 </ImgWrap>
