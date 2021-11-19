@@ -3,6 +3,8 @@ import React from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import { GoMarkGithub as Icon } from 'react-icons/go';
 import { animateScroll as scroll } from 'react-scroll';
+import logo from '../images/enlace.png';
+import { Img, ImgWrap } from '../Navbar/NavbarElements';
 import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, WebsiteRights, SocialLogo, SocialIcons, SocialIconLink} from './FooterElements';
 
 
@@ -73,7 +75,10 @@ const Footer = () => {
             <SocialMedia>
               <SocialMediaWrap>
               <SocialLogo to='/' onClick={toggleHome}>
-                Enlace
+                {/* Enlace */}
+                <ImgWrap>
+                  <Img src={logo} alt={'Enlace'} />
+                </ImgWrap>
               </SocialLogo>
               <WebsiteRights>ENLACE &copy; {new Date().getFullYear()} - Michael Heer, Karla Goo, Micah Waweru, and Jessica White
                 </WebsiteRights>
