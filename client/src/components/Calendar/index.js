@@ -2,19 +2,17 @@ import React, {useState} from 'react';
 import FullCalendar from '@fullcalendar/react'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid';
 import EventModal from '../EventModal';
-// import styled from '@emotion/styled';
+
 
 import { useQuery } from '@apollo/client';
 import { QUERY_EVENTS } from '../../utils/queries';
 import { Button } from 'react-scroll';
-// import { QUERY_EVENT } from '../../utils/queries';
-// const dayjs = require('dayjs')
+import styled from 'styled-components';
+import { QUERY_EVENT } from '../../utils/queries';
+const dayjs = require('dayjs')
 
 //console.log(document.querySelector('.fc-event-title'))
 
-// const FullCalendar = styled.FullCalendar`
-// color: '#02353C'
-// `;
 
 const Calendar = () => {
   const [show, setShow] = useState(false);
@@ -52,7 +50,10 @@ const Calendar = () => {
       <div>
         {/* {data.events.map((event)=>(<EventModal passThrough={data} show={show} handleClose={handleClose} />))} */}
         <EventModal show={show} handleClose={handleClose} pass={currentEvent} />
-        <FullCalendar
+        <FullCalendar 
+        eventColor={'#449342'}
+        eventBackgroundColor={'#02353C'}
+        eventBorderColor={'#C1F6ED'}
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
         events={data}
