@@ -99,7 +99,6 @@ export const WebsiteRights = styled.small`
   color: #c1f6ed;
   margin-bottom: 5px;
   align-items: baseline;
-  align-content: center;
 `;
 
 export const SocialIcons = styled.div`
