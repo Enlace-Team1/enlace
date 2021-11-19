@@ -38,7 +38,7 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Micah Waweru',
-    headline: 'The Man with...',
+    headline: 'The Man with Top Floor Thinking',
     description:
       "Micah is an IT Profesional with experience in product support, analysis, management and development. Micah has worked in Technical Product Management and Analysis and is currently being educated in full stack development through Northwestern. Micah is passionate about providing the end user with the best product possible.",
     imgStart: false,
