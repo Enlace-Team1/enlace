@@ -34,4 +34,4 @@ else{
 }
 }
 
-export default EventModal
+export default EventModal;
