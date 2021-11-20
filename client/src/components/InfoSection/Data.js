@@ -29,7 +29,7 @@ export const homeObjOne = {
     buttonLabel: 'Learn More',
     href: () => window.location.assign('/aboutus'),
     imgStart: true,
-    img: require('../images/mother.jpg').default,
+    img: require('../images/coders.jpg').default,
     alt: 'MotherBoard',
     dark: true,
     primary: true,
